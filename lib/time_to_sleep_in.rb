@@ -1,8 +1,8 @@
-class String
+class Time
 
   define_method(:time_to_sleep_in) do
     nametoday = ""
-    today = Time.new(self)
+    today = self
     if today.wday() == 6
       nametoday.concat("Sleep in!")
     elsif today.wday() == 7
@@ -23,16 +23,3 @@ class String
     nametoday
   end
 end
-
-# class String
-#
-#   define_method(:time_to_sleep_in) do
-#     today = Time.new()
-#     index = []
-#     if index = 0 || 1
-#     puts ("Sleep in!")
-#    else
-#       puts "Wake up"
-#     end
-#   end
-# end
